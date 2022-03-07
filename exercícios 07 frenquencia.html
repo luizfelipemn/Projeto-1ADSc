@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+Nome: <input id="input_nome"><br>
+Aulas totais: <input id="input_aulas_totais"><br>
+Faltas: <input id="input_faltas"><br>
+
+<button onclick = "calcular_frequencia()"> Calcular Frequência
+
+</button>
+
+<div style="color: blue"  id="div_resultado"></div>
+
+
+
+
+</body>
+</html>
+<script>
+    function calcular_frequencia(){
+        var nome = input_nome.value
+        var aulas_totais = Number(input_aulas_totais.value)
+        var faltas = Number(input_faltas.value)
+
+        var porcentagem_faltas = 100 - ((faltas * 100) / aulas_totais)
+        div_resultado.innerHTML = `Olá, ${nome}! Sua frenquência é de <b style="green">${porcentagem_faltas}%<b>
+
+            <div style = "height: 20px; width: ${porcentagem_faltas}%; background-color: red"></div
+            `
+    
+    
+
+    }
+
+
+
+
+    </script>
