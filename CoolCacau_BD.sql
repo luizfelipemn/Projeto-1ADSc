@@ -39,11 +39,11 @@ INSERT INTO Clientes (Nome, Tipo_de_comercio, CEP, CNPJ, Telefone, Email, Nome_d
                      ('chocolovers', 'agronegocio', '09912-060','94.489.510/0001-18', '11987456321', 'chocolovers@sptech.school', 'Rosa', 'DHT11', 3, 2);
                
 INSERT INTO Monitoramento (Tipo_de_sensor, Temperatura_C, Umidade_UR, Data_hora, IdCliente)
-	               VALUES ('DHT11', '24', '81', '2022-01-05', '1'),
-						  ('DHT11', '21', '83', '2021-12-28', '2'),
-                          ('DHT11', '22', '78', '2022-03-14', '3');
+	               VALUES ('DHT11', '24', '81', '2022-01-05 09:15:20', '1'),
+						  ('DHT11', '21', '83', '2021-12-28 09:20:02', '2'),
+                          ('DHT11', '22', '78', '2022-03-14 09:25:01', '3');
 
 INSERT INTO Sensor (Numero_Serial, Localizacao, Tipo_sensor)
-			VALUES ('5786', 'Sao Paulo', 'temperatura e Humidade'),
-				   ('9621', 'Sao Paulo', 'temperatura e Humidade'),
-                   ('7059', 'Sao Paulo', 'temperatura e Humidade');
+			VALUES ('5786', 'Sao Paulo', 'temperatura e umidade'),
+				   ('9621', 'Sao Paulo', 'temperatura e umidade'),
+                   ('7059', 'Sao Paulo', 'temperatura e umidade');
